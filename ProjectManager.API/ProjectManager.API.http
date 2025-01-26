@@ -1,0 +1,14 @@
+@host = http://localhost
+@port = 5136
+@ProjectManager.API_HostAddress = {{host}}:{{port}}
+
+POST {{ProjectManager.API_HostAddress}}/api/weatherforecast/generate?count=3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVGVzdCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InVzZXJAZXhhbXBsZS5jb20iLCJleHAiOjE3Mzc2MzQzNjYsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyNjEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MjYxIn0.O0owFI0PW6M-oDWV9ecQ1GWlbq1Dc8ADppWgBlVxjC4
+Content-Type: application/json
+
+{
+    "min": -15,
+    "max": 30
+}
+
+###
